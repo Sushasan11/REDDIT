@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <!-- Created the header of the web page-->
+    <div class="header">
+        <nav id="navbar">
+            <!-- logo image-->
+            <a href="../index.html" target="_self">
+                <img src="../image/logo.png" class="logo">
+            </a>
+            <ul id="menu">
+                <!--Add the menubar contents and links -->
+                <li><a href="index.html" target="_self"><b>Home</b></a></li>
+                <li><a href="#"><b>Our Products</b></a></li>
+                <li><a href="#"><b>Blog</b></a></li>
+                <li><a href="#"><b>About Us</b></a></li>
+                <li><a href="#"><b>Research</b></a></li>
+                <li><a href="#"><b>Form</b></a></li>
+            </ul>
+        </nav>
+    </div>
+     <br>
+    
+    <div class="login">
+        <h3>Login</h3>
+        <form action="../index.html">
+        <input type="text" placeholder="User Name">
+        <input type="password"placeholder ="Password">
+        <a href="#">Forget Password ?</a>
+        <div class="btns">
+                <button class="login-btn">Login</button>
+                <button class="sign-btn">Sign Up </button> 
+                </form>
+        </div>
+       </div> 
+    </br>
+    <!-- java script is used -->
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function () {
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+
+    <!-- Footer section of the webpage-->
+    <footer>
+        <div class="footer-content">
+            <h3>code opacity</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <ul class="socials">
+                <li><a href="hey.html"><img src="../image/fb.png" class="facebook" </a></li>
+                <li><a href="hey.html"><img src="../image/tweet.png" class="tweet" </a></li>
+                <li><a href="hey.html"><img src="../image/insta.png" class="insta" </a></li>
+                <li><a href="hey.html"><img src="../image/link.png" class="link" </a></li>
+
+            </ul>
+        </div>
+
+    </footer> 
+</body>
+</html>
